@@ -15,6 +15,7 @@
 		523B8FBB1CB49D7400122618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523B8FB91CB49D7400122618 /* LaunchScreen.storyboard */; };
 		523B8FC61CB49D7400122618 /* StepImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B8FC51CB49D7400122618 /* StepImageTests.m */; };
 		523B8FD11CB49D7400122618 /* StepImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B8FD01CB49D7400122618 /* StepImageUITests.m */; };
+		523B8FE01CB4AA3900122618 /* StepImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523B8FDF1CB4AA3900122618 /* StepImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		523B8FCC1CB49D7400122618 /* StepImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523B8FD01CB49D7400122618 /* StepImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepImageUITests.m; sourceTree = "<group>"; };
 		523B8FD21CB49D7400122618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523B8FDE1CB4AA3800122618 /* StepImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepImageViewController.h; sourceTree = "<group>"; };
+		523B8FDF1CB4AA3900122618 /* StepImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				523B8FAF1CB49D7400122618 /* AppDelegate.m */,
 				523B8FB11CB49D7400122618 /* ViewController.h */,
 				523B8FB21CB49D7400122618 /* ViewController.m */,
+				523B8FDE1CB4AA3800122618 /* StepImageViewController.h */,
+				523B8FDF1CB4AA3900122618 /* StepImageViewController.m */,
 				523B8FB41CB49D7400122618 /* Main.storyboard */,
 				523B8FB71CB49D7400122618 /* Assets.xcassets */,
 				523B8FB91CB49D7400122618 /* LaunchScreen.storyboard */,
@@ -272,6 +277,7 @@
 			files = (
 				523B8FB31CB49D7400122618 /* ViewController.m in Sources */,
 				523B8FB01CB49D7400122618 /* AppDelegate.m in Sources */,
+				523B8FE01CB4AA3900122618 /* StepImageViewController.m in Sources */,
 				523B8FAD1CB49D7400122618 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +336,7 @@
 		523B8FD31CB49D7400122618 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -364,6 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "($RESOURCE_ROOT)/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -375,7 +382,7 @@
 		523B8FD41CB49D7400122618 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -403,6 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "($RESOURCE_ROOT)/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
